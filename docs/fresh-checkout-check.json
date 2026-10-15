@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "369044eafe4beab61ddb69044dd0ea6950aa6047",
+  "freshLocalClone": true,
+  "dependencyInstallRequired": false,
+  "engineTests": 12,
+  "engineFailures": 0,
+  "browserChecks": 11,
+  "browserExceptions": [],
+  "externalRequests": [],
+  "serverPortUsed": 4175,
+  "note": "Local clone of committed source; npm test and complete browser workflow run there, not just in the original project directory."
+}

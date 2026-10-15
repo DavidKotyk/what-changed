@@ -39,7 +39,7 @@ Build mode: fast, adapted to explicit autonomous work instruction (docs/workflow
 ## Final Review
 - [ ] Final review complete — feedback resolved and learner confirms ready to ship.
 ## Code Tour and App Map
-- [x] Reference map generated, verified and shown.
+- [x] Reference map generated and verified; opening queued in Codex, user viewing unconfirmed.
 - [x] Brief evidence-based recap delivered; no hands-on learning claimed.
 Optional edit/reflection not requested, per autonomy preference. No learner survey response fabricated.
 ## Revisions

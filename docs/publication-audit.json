@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "369044eafe4beab61ddb69044dd0ea6950aa6047",
+  "commitsScanned": 3,
+  "blobsScanned": 71,
+  "credentialPatternOrPrivateFileFindings": [],
+  "trackedProfile": false,
+  "remoteCount": 0,
+  "published": false,
+  "note": "Pattern scan and intended-file review, not a guarantee that every possible secret is detectable. Review again immediately before publication."
+}
