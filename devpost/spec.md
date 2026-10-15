@@ -47,3 +47,6 @@ Missing evidence → uncertain and blank missing side. Duplicate headings/near t
 Bounded document formats keep source evidence verifiable; no extraction service. Deterministic lexical matching avoids unsupported generative conclusions. Manual anchor notation improves traceability while preserving automatic unanchored retrieval. No claim that this is semantic AI at runtime; contest uses AI-assisted development.
 ## Decisions and Open Issues
 Main engineering uncertainty: lexical matches can look strong while being nonbinding examples or incorrect topics. Investigate with misleading-wording fixtures and report false positives/misses rather than hiding them. This is an agent-identified risk, not an invented learner uncertainty. Final browser verification, video recording, user review and publication approval remain open.
+
+## Sharing status
+Public demonstration: https://youtu.be/vTV7kH7ZSBE (signed-out playback verified). User approved publishing and submitting. Public source URL and contest submission remain pending authentication and personal registration answers; consult docs/publication-status.json.

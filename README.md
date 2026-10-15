@@ -51,6 +51,8 @@ Alternatively set `PLAYWRIGHT_MODULE` to the absolute path of an existing Playwr
 
 ## Demonstration
 
+[Watch the public demonstration on YouTube](https://youtu.be/vTV7kH7ZSBE). Public access and playback were verified without signing in.
+
 ![Synthetic procedure review with paired evidence](docs/review-screenshot.png)
 
 All Harbor Desk documents are **synthetic**, authored for this project. They are not a real company's policy. [Demo guide](demo/README.md) lists the recording, chapter timings and verification. The recording shows the running app, changed/unchanged/missing/misleading evidence, a human review decision, export and the raw diff.
@@ -72,4 +74,4 @@ English plain text/Markdown only; 80,000 characters per reference document, 30,0
 
 Started from an empty project directory on October 15, 2026. No previous project code reused. The installed Devpost Learn Skill Pack lives in `.agents/skills/` under its original MIT license. Original application code and synthetic demo material use the root MIT license. No other third-party app source, graphics, fonts or music are bundled. Playwright/Chrome/FFmpeg used for local QA/recording are external development tools and are not redistributed.
 
-Nothing has been published, terms accepted or submitted by the agent. User review and explicit authorization are required before those actions.
+The user authorized publication and submission. The demo is public on YouTube; the source repository and Devpost entry remain pending GitHub verification and required personal registration answers. See docs/publication-status.json for the latest verified state.

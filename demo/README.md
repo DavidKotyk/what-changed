@@ -37,4 +37,4 @@ See README.md for optional Playwright setup and PLAYWRIGHT_MODULE. Recording ove
 
 ## Publication
 
-User approval is pending. The contest requires the demo to be publicly visible on YouTube or Vimeo and its URL in the submission. A local video file does not satisfy that public-link requirement. Do not upload or submit without approval.
+User approval was received. Published video: https://youtu.be/vTV7kH7ZSBE . YouTube Studio confirmed publication and Public visibility; signed-out Incognito playback was verified. The Devpost entry itself has not been submitted.

@@ -36,6 +36,6 @@ JavaScript, HTML, CSS, Node.js, Devpost Learn Skill Pack, AI-assisted developmen
 
 ## Links awaiting approval and publication
 - Public repository URL: pending
-- Public YouTube/Vimeo demo URL: pending
+- Public YouTube demo URL: https://youtu.be/vTV7kH7ZSBE (published, public, signed-out playback verified)
 - Optional live hosted app: not planned; local run plus public video/repo meets the documented artifact requirements
 - Exact form fields / exit survey: unverified; user answers required where personal attestation or reflection is requested
