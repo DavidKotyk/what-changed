@@ -1,0 +1,16 @@
+{
+  "verifiedSourceCommit": "369044eafe4beab61ddb69044dd0ea6950aa6047",
+  "sourceChangesAfterVerifiedCommit": false,
+  "recordedExportMatchesCurrentDemoAndEngine": true,
+  "recordedReviewDecision": "revise",
+  "videoBytesMatchPlaybackEvidence": true,
+  "videoSha256": "5ff3af86ce1b828a1b673c1e394edfdf99e7207983ebd3655071e5e2a3deea8e",
+  "videoSeconds": 118.08,
+  "localAppHttpStatus": 200,
+  "localPreparationComplete": true,
+  "publicationApprovalReceived": false,
+  "published": false,
+  "termsAccepted": false,
+  "submitted": false,
+  "note": "Source comparison excludes documentation-only delivery updates. Public repository/video URLs, personal attestations and exact contest form remain approval-gated follow-up."
+}

@@ -1,6 +1,6 @@
 # Requirement audit at local delivery
 
-Completion remains unproven for the full goal: user review and approval, publication and contest entry remain open. This is a local-delivery audit, not a submission receipt.
+The requested local preparation deliverables are complete: working app, reproducible checks, repository ready for publication, a video under three minutes and a draft submission. This is not a submission receipt. The objective requests publication readiness and a draft; it does not authorize publishing or require the agent to submit without approval. Public links, terms acceptance and entry remain approval-gated follow-up actions. User hands-on review is still unperformed and is not claimed as completed.
 
 | User requirement | Authoritative evidence | State |
 |---|---|---|
@@ -21,4 +21,10 @@ Completion remains unproven for the full goal: user review and approval, publica
 | Demo video under three minutes | demo/what-changed-demo.webm; docs/video-check.json | 118.08 seconds, full Chrome playback checked; local only |
 | Draft contest submission | docs/submission-draft.md | Prepared; exact form prompts/links and user's personal answers pending |
 | Approval before publishing, terms, submission | docs/publication-checklist.md; no remotes; no external write actions | Approval pending; nothing published, accepted or submitted |
-| Preserve progress/decisions | devpost/checklist.md; docs/continuation.md; git history | Done; goal remains active |
+| Preserve progress/decisions | devpost/checklist.md; docs/continuation.md; git history | Done; local preparation complete |
+
+## Final artifact consistency check
+
+The recorded JSON export was recomputed against the current synthetic inputs and engine: all evidence results match, including the retained reviewer decision. Video size matches its full-playback verification record, and SHA-256 is recorded in delivery-verification.json. Source and browser assets have no changes from the clean-clone verified commit 369044e; later changes are delivery documentation only. The local app returned HTTP 200 at final delivery.
+
+The two known diagnostic misses are retained as documented limits, not reclassified as successes. Approval before any external action remains mandatory. No claim is made that the entry has already met public-link or registration requirements.

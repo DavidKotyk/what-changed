@@ -45,7 +45,7 @@ Optional edit/reflection not requested, per autonomy preference. No learner surv
 ## Revisions
 - Initial implementation also included saving, decisions and export so the browser could exercise the complete journey immediately. Slice 2 retains the independent workflow verification and polish checkpoint.
 
-Browser verification: Chrome 155, ten assertions covering input errors, exact evidence, categories, filter, export, persistence, invalidation, literal HTML, mobile overflow, exceptions and external requests. Results in docs/browser-check.json (copied from local artifact). No learner feedback inferred.
+Browser verification: Chrome 155, eleven assertions covering input errors, exact evidence, categories, filter, export, persistence, invalidation, literal HTML, mobile overflow, exceptions and external requests. Results in docs/browser-check.json (copied from local artifact). No learner feedback inferred.
 
 Packaging evidence: 12 engine tests and 11 browser checks pass. Actual video metadata is 118.08 seconds (1440x960 VP8 WebM), full playback verified at 4x; frames at 38/67/90 seconds visually checked. The 12-case diagnostic evaluation deliberately retains two disclosed misses.
 
