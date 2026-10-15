@@ -1,0 +1,126 @@
+{
+  "engineVersion": "1.0.0",
+  "runtime": "v20.19.0",
+  "platform": "darwin/arm64",
+  "rows": [
+    {
+      "name": "Deadline changes",
+      "expected": "changed",
+      "actual": "changed",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 1.208
+    },
+    {
+      "name": "Exact unchanged passage",
+      "expected": "unchanged",
+      "actual": "unchanged",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 0,
+      "elapsedMs": 0.087
+    },
+    {
+      "name": "Source section removed",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 4,
+      "elapsedMs": 0.037
+    },
+    {
+      "name": "Nonbinding example changes",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 0.035
+    },
+    {
+      "name": "Negation changes",
+      "expected": "changed",
+      "actual": "changed",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 0.137
+    },
+    {
+      "name": "Competing lexical candidates",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 0,
+      "elapsedMs": 0.495
+    },
+    {
+      "name": "Renamed source heading",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 0.02
+    },
+    {
+      "name": "Duplicate explicit heading",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 4,
+      "elapsedMs": 0.019
+    },
+    {
+      "name": "Unanchored numeric change",
+      "expected": "changed",
+      "actual": "changed",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 0.044
+    },
+    {
+      "name": "No shared vocabulary",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "knownLimitation": null,
+      "changedDiffLines": 2,
+      "elapsedMs": 0.029
+    },
+    {
+      "name": "Cross-reference change outside anchor",
+      "expected": "changed",
+      "actual": "unchanged",
+      "matches": false,
+      "knownLimitation": "No cross-reference resolution: anchored passage unchanged although its referenced deadline changed.",
+      "changedDiffLines": 2,
+      "elapsedMs": 0.029
+    },
+    {
+      "name": "Implicit hypothetical without trigger words",
+      "expected": "uncertain",
+      "actual": "changed",
+      "matches": false,
+      "knownLimitation": "The small example-language heuristic misses this hypothetical phrasing.",
+      "changedDiffLines": 2,
+      "elapsedMs": 0.095
+    }
+  ],
+  "demo": {
+    "rawAddedLines": 4,
+    "rawRemovedLines": 7,
+    "procedureSteps": 4,
+    "categories": {
+      "changed": 1,
+      "unchanged": 1,
+      "uncertain": 2
+    }
+  },
+  "unexpectedFailures": 0
+}

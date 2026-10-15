@@ -1,0 +1,14 @@
+{
+  "runtime": "v20.19.0",
+  "platform": "darwin/arm64",
+  "inputChars": [
+    80000,
+    80000
+  ],
+  "steps": 100,
+  "compareMs": 981.74,
+  "diff1500LinesMs": 17.14,
+  "diffOutputLines": 3000,
+  "maxRssMiB": 110.47,
+  "note": "Single synthetic run, Node process peak RSS; not browser peak memory or a general worst-case benchmark."
+}

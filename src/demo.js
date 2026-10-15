@@ -41,5 +41,5 @@ Use the phrase “Packed with care, sent with thanks” on the insert.
   procedure: `[Dispatch window] Submit parcel labels by 3 p.m. for same-day dispatch.
 [Returns] Inspect returned items within 5 business days and log their condition.
 [Archive] Keep signed dispatch manifests for 90 days.
-[Priority service] Promise premium replacements within 24 hours.`
+[Priority service] Promise premium replacements within 24 hours.`,
 };

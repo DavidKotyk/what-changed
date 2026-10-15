@@ -1,0 +1,173 @@
+{
+  "title": "What Changed? — Evidence review",
+  "exportedAt": "2026-10-15T23:28:33.094Z",
+  "engineVersion": "1.0.0",
+  "method": "Deterministic section anchors and lexical retrieval; no generative AI at runtime.",
+  "inputs": {
+    "before": "# Harbor Desk • Shipping Reference v1\nSynthetic demonstration. Not a real company's policy.\n\n## Dispatch window\nSubmit parcel labels by 3 p.m. local time for same-day dispatch.\nThe dispatch desk checks the packing list before release.\n\n## Returns\nInspect returned items within 5 business days.\nRecord the condition and order number in the returns log.\n\n## Archive\nKeep the signed dispatch manifest for 90 days.\n\n## Priority service\nExample only: a premium customer might receive a replacement in 24 hours.\nThis illustration is not a service commitment.\n\n## Brand voice\nUse the phrase “A little care goes a long way” on the insert.\n",
+    "after": "# Harbor Desk • Shipping Reference v2\nSynthetic demonstration. Not a real company's policy.\n\n## Dispatch window\nSubmit parcel labels by 1 p.m. local time for same-day dispatch.\nThe dispatch desk checks the packing list before release.\n\n## Returns\nInspect returned items within 5 business days.\nRecord the condition and order number in the returns log.\n\n## Priority service\nExample only: a premium customer might receive a replacement in 12 hours.\nThis illustration is not a service commitment.\n\n## Brand voice\nUse the phrase “Packed with care, sent with thanks” on the insert.\n",
+    "procedure": "[Dispatch window] Submit parcel labels by 3 p.m. for same-day dispatch.\n[Returns] Inspect returned items within 5 business days and log their condition.\n[Archive] Keep signed dispatch manifests for 90 days.\n[Priority service] Promise premium replacements within 24 hours."
+  },
+  "counts": {
+    "changed": 1,
+    "unchanged": 1,
+    "uncertain": 2
+  },
+  "results": [
+    {
+      "step": {
+        "id": "step-1",
+        "text": "Submit parcel labels by 3 p.m. for same-day dispatch.",
+        "anchor": "Dispatch window"
+      },
+      "before": {
+        "heading": "Dispatch window",
+        "key": "dispatch window",
+        "text": "Submit parcel labels by 3 p.m. local time for same-day dispatch.\nThe dispatch desk checks the packing list before release.",
+        "start": 112,
+        "end": 234,
+        "lineStart": 5,
+        "lineEnd": 6,
+        "score": 1
+      },
+      "after": {
+        "heading": "Dispatch window",
+        "key": "dispatch window",
+        "text": "Submit parcel labels by 1 p.m. local time for same-day dispatch.\nThe dispatch desk checks the packing list before release.",
+        "start": 112,
+        "end": 234,
+        "lineStart": 5,
+        "lineEnd": 6,
+        "score": 1
+      },
+      "category": "changed",
+      "reasons": [
+        "Located passage text differs. Read both versions to decide whether this step needs revision."
+      ],
+      "match": {
+        "before": "Exact section anchor: Dispatch window.",
+        "after": "Exact section anchor: Dispatch window."
+      },
+      "review": {
+        "decision": "revise",
+        "note": "Move label preparation earlier. Confirm the cutoff with the dispatch lead."
+      }
+    },
+    {
+      "step": {
+        "id": "step-2",
+        "text": "Inspect returned items within 5 business days and log their condition.",
+        "anchor": "Returns"
+      },
+      "before": {
+        "heading": "Returns",
+        "key": "returns",
+        "text": "Inspect returned items within 5 business days.\nRecord the condition and order number in the returns log.",
+        "start": 247,
+        "end": 351,
+        "lineStart": 9,
+        "lineEnd": 10,
+        "score": 1
+      },
+      "after": {
+        "heading": "Returns",
+        "key": "returns",
+        "text": "Inspect returned items within 5 business days.\nRecord the condition and order number in the returns log.",
+        "start": 247,
+        "end": 351,
+        "lineStart": 9,
+        "lineEnd": 10,
+        "score": 1
+      },
+      "category": "unchanged",
+      "reasons": [
+        "Located passage text is unchanged apart from whitespace. This does not validate the procedure."
+      ],
+      "match": {
+        "before": "Exact section anchor: Returns.",
+        "after": "Exact section anchor: Returns."
+      },
+      "review": {
+        "decision": "unreviewed",
+        "note": ""
+      }
+    },
+    {
+      "step": {
+        "id": "step-3",
+        "text": "Keep signed dispatch manifests for 90 days.",
+        "anchor": "Archive"
+      },
+      "before": {
+        "heading": "Archive",
+        "key": "archive",
+        "text": "Keep the signed dispatch manifest for 90 days.",
+        "start": 364,
+        "end": 410,
+        "lineStart": 13,
+        "lineEnd": 13,
+        "score": 1
+      },
+      "after": null,
+      "category": "uncertain",
+      "reasons": [
+        "After: supporting passage missing.",
+        "The passage match needs human verification."
+      ],
+      "match": {
+        "before": "Exact section anchor: Archive.",
+        "after": "No passage under “Archive”."
+      },
+      "review": {
+        "decision": "unreviewed",
+        "note": ""
+      }
+    },
+    {
+      "step": {
+        "id": "step-4",
+        "text": "Promise premium replacements within 24 hours.",
+        "anchor": "Priority service"
+      },
+      "before": {
+        "heading": "Priority service",
+        "key": "priority service",
+        "text": "Example only: a premium customer might receive a replacement in 24 hours.\nThis illustration is not a service commitment.",
+        "start": 432,
+        "end": 552,
+        "lineStart": 16,
+        "lineEnd": 17,
+        "score": 1
+      },
+      "after": {
+        "heading": "Priority service",
+        "key": "priority service",
+        "text": "Example only: a premium customer might receive a replacement in 12 hours.\nThis illustration is not a service commitment.",
+        "start": 373,
+        "end": 493,
+        "lineStart": 13,
+        "lineEnd": 14,
+        "score": 1
+      },
+      "category": "uncertain",
+      "reasons": [
+        "Example or nonbinding language detected; do not treat it as an instruction."
+      ],
+      "match": {
+        "before": "Exact section anchor: Priority service.",
+        "after": "Exact section anchor: Priority service."
+      },
+      "review": {
+        "decision": "unreviewed",
+        "note": ""
+      }
+    }
+  ],
+  "limitations": [
+    "Text comparison and lexical retrieval, not semantic understanding or compliance certification.",
+    "Text unchanged means only the located passage is unchanged; it may not support the checklist instruction.",
+    "Section anchors are strongest. Synonyms, renamed headings, cross-references and long multi-topic sections can defeat retrieval.",
+    "Example-language detection is a small heuristic, not a complete detector of misleading or nonbinding text.",
+    "A changed passage is a review candidate, not an instruction to revise. A person must read the evidence."
+  ]
+}

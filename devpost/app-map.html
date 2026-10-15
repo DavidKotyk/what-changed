@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>What Changed? · App map</title>
+    <style>
+      body {
+        max-width: 840px;
+        margin: 48px auto;
+        padding: 0 24px;
+        background: #f7f6f1;
+        color: #243b36;
+        font: 16px/1.7 system-ui;
+      }
+      h1,
+      h2 {
+        font-family: Georgia;
+      }
+      h1 {
+        font-size: 42px;
+        line-height: 1.1;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      a {
+        color: #15584d;
+      }
+      code {
+        font-size: 13px;
+        background: #e9eee4;
+        padding: 3px 5px;
+      }
+      section {
+        border-top: 1px solid #ccd5cb;
+        margin-top: 26px;
+        padding-top: 14px;
+      }
+      .flow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+      }
+      .box {
+        border: 1px solid #bdcdbd;
+        border-radius: 5px;
+        padding: 15px;
+        flex: 1;
+        min-width: 170px;
+        background: #fffefa;
+      }
+      .small {
+        font-size: 13px;
+        color: #596f61;
+      }
+      summary {
+        cursor: pointer;
+      }
+      a:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid #855719;
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="small">WHAT CHANGED? / REFERENCE MAP</p>
+    <h1>From a document edit<br />to an explainable review.</h1>
+    <p>
+      A local app connects checklist steps to passages from two document
+      versions. It compares the text, preserves uncertainty and leaves decisions
+      to the person reviewing.
+    </p>
+    <div
+      class="flow"
+      role="img"
+      aria-label="Compare button calls the evidence engine; engine results render source cards; reviewer decisions go to a JSON export"
+    >
+      <div class="box">Compare versions<br /><code>src/app.js</code></div>
+      <span aria-hidden="true">→</span>
+      <div class="box">Locate & compare<br /><code>src/engine.js</code></div>
+      <span aria-hidden="true">→</span>
+      <div class="box">Read & decide<br /><code>renderDetail</code></div>
+    </div>
+    <section>
+      <h2>A three-stop reference route</h2>
+      <p class="small">
+        This is a reference route, not a claim that the learner completed a
+        hands-on tour. Snapshot: source commit <code>03f6d9d</code> plus
+        preparation changes; source can evolve.
+      </p>
+      <ol>
+        <li>
+          <a href="../src/app.js">src/app.js</a> — search
+          <code>$("compare").addEventListener</code>. It snapshots the inputs,
+          invokes comparison and clears old decisions. Input listeners call
+          <code>invalidate</code> so edited inputs cannot leave an exportable
+          stale review.
+        </li>
+        <li>
+          <a href="../src/engine.js">src/engine.js</a> —
+          <code>parseDocument</code>, <code>retrieve</code> and
+          <code>compare</code> preserve source slices, locate candidates and
+          decide which evidence needs verification.
+          <code>changedSpan</code> only supplies visual text highlighting.
+        </li>
+        <li>
+          <a href="../src/app.js">src/app.js</a> —
+          <code>evidenceCard</code> renders literal quotations;
+          <code>renderDetail</code> records a human decision; the export button
+          downloads sources, results and notes.
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>To change this, start here</h2>
+      <details>
+        <summary>Source matching and uncertainty</summary>
+        <p>
+          <code>src/engine.js</code>: <code>retrieve</code> has lexical
+          thresholds; <code>misleading</code> detects a limited set of example
+          phrases. Add independently authored cases in
+          <code>tests/fixtures.js</code> before making broad claims.
+        </p>
+      </details>
+      <details>
+        <summary>Appearance and layout</summary>
+        <p>
+          <code>src/style.css</code>: color variables at the top; media queries
+          for tablet and mobile. <code>index.html</code> contains page structure
+          and input help.
+        </p>
+      </details>
+      <details>
+        <summary>Demonstration documents</summary>
+        <p>
+          <code>src/demo.js</code> contains all synthetic reference text and
+          procedure steps. Keep them clearly labeled synthetic in future
+          recordings.
+        </p>
+      </details>
+      <details>
+        <summary>Saved procedure and export</summary>
+        <p>
+          <code>src/app.js</code>: <code>storageKey</code>, Save/Forget handlers
+          and the Export handler. Documents stay in tab memory; explicit Save
+          stores only the procedure.
+        </p>
+      </details>
+    </section>
+    <section>
+      <h2>A practice to reuse</h2>
+      <p>
+        The requirement “show exact evidence” became a check in
+        <code>tests/engine.test.js</code>: every quote must equal
+        <code>source.slice(start, end)</code>, with correct line numbers. This
+        checks quotation integrity separately from interpretation. The
+        cross-reference and hypothetical misses retained in
+        <code>docs/evaluation.md</code> show why exact quotes alone do not prove
+        a correct conclusion.
+      </p>
+      <p>
+        On another project, identify the property that must always hold, test it
+        directly, and separately record what that test cannot establish.
+      </p>
+    </section>
+    <section>
+      <h2>Run it again</h2>
+      <p>
+        From the repository: <code>npm start</code>, then open
+        <code>http://127.0.0.1:4173</code>. Choose the synthetic example and
+        Compare versions. Run <code>npm test</code> and
+        <code>npm run evaluate</code> to reproduce the checks. No network or
+        build step is needed for this map.
+      </p>
+      <p>
+        <a href="../README.md">Repository guide</a> ·
+        <a href="../docs/limitations.md">Limitations</a> ·
+        <a href="../docs/evaluation.md">Diagnostic evaluation</a>
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T23:25:48.813Z",
+  "checkedAt": "2026-10-15T23:31:43.627Z",
   "browser": "155.0.8059.40",
   "checks": [
     "Empty inputs rejected",
@@ -11,6 +11,7 @@
     "Editing inputs clears results and disables stale export",
     "Source HTML remains literal text",
     "390px viewport has no page overflow",
+    "App map served with offline content and styling",
     "No browser exceptions or external requests"
   ],
   "errors": [],

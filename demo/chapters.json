@@ -1,0 +1,68 @@
+[
+  {
+    "startSeconds": 0.11,
+    "title": "What Changed? · A local procedure review desk",
+    "text": "When a reference document changes, which checklist steps deserve another look? This app connects the edits to the procedure you maintain.",
+    "intendedHoldSeconds": 8
+  },
+  {
+    "startSeconds": 8.25,
+    "title": "1 · Bring the documents and your checklist",
+    "text": "This shipping policy is synthetic. Each [section heading] connects a checklist step to a source section. Unanchored steps use shared-word matching.",
+    "intendedHoldSeconds": 10
+  },
+  {
+    "startSeconds": 18.28,
+    "title": "A procedure you can reuse",
+    "text": "Save the checklist in this browser for the next revision. Documents and review decisions stay in the tab. No API, account or model download is needed.",
+    "intendedHoldSeconds": 8
+  },
+  {
+    "startSeconds": 26.31,
+    "title": "2 · A deadline worth reviewing",
+    "text": "The dispatch cutoff moved from 3 p.m. to 1 p.m. Exact passages and line numbers sit side by side. The highlighted text changed; you decide whether the step should.",
+    "intendedHoldSeconds": 12
+  },
+  {
+    "startSeconds": 38.33,
+    "title": "Keep unchanged evidence in view",
+    "text": "The returns passage still says 5 business days. “Text unchanged” describes this passage only. It does not certify that the checklist instruction is correct.",
+    "intendedHoldSeconds": 9
+  },
+  {
+    "startSeconds": 47.34,
+    "title": "Missing evidence stays uncertain",
+    "text": "The archive passage is missing from the new version. The app does not invent a replacement rule or conclude that retention is no longer required.",
+    "intendedHoldSeconds": 10
+  },
+  {
+    "startSeconds": 57.36,
+    "title": "Misleading wording needs a human",
+    "text": "The 24-to-12-hour edit is explicitly an example, not a commitment. The app flags uncertainty instead of telling staff to promise a faster replacement.",
+    "intendedHoldSeconds": 11
+  },
+  {
+    "startSeconds": 68.42,
+    "title": "3 · Record a decision with the evidence",
+    "text": "A person marks “Revise step” and records what to check. Export includes both documents, exact passages, uncertainty reasons and human review notes.",
+    "intendedHoldSeconds": 10
+  },
+  {
+    "startSeconds": 78.52,
+    "title": "A useful companion to a text diff",
+    "text": "The raw diff also shows title and brand-copy edits unrelated to these steps. The procedure view organizes a review; it does not replace reading the full source.",
+    "intendedHoldSeconds": 10
+  },
+  {
+    "startSeconds": 88.54,
+    "title": "The limits are part of the product",
+    "text": "This uses anchors and lexical matching, not semantic AI. Cross-references and subtle hypothetical wording can be missed. A 12-case diagnostic set matched 10 expectations, with 2 misses disclosed.",
+    "intendedHoldSeconds": 12
+  },
+  {
+    "startSeconds": 100.55,
+    "title": "Evidence before assumptions",
+    "text": "What Changed? helps procedure owners see what to inspect, keep uncertainty visible and leave with a review they can explain. Built locally with the Devpost Learn Skill Pack.",
+    "intendedHoldSeconds": 8
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "durationSeconds": 118.08,
+  "width": 1440,
+  "height": 960,
+  "error": null,
+  "bytes": 9945147,
+  "fullPlaybackVerifiedAt4x": true,
+  "playback": {
+    "ended": true,
+    "currentTime": 118.08,
+    "error": null
+  },
+  "browser": "155.0.8059.40",
+  "visualSamplesSeconds": [
+    38,
+    67,
+    90
+  ],
+  "note": "Extracted frames at these times were visually inspected separately. No audio track; captions are burned into the recording."
+}
