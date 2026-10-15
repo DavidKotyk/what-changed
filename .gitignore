@@ -1,0 +1,10 @@
+/devpost/learner-profile.md
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+artifacts/
+# Agent-specific symlinks duplicate the canonical installed skill pack.
+.claude/
+agent/

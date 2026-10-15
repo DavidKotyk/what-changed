@@ -1,0 +1,14 @@
+{
+  "name": "what-changed",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local evidence review for document changes against a saved procedure",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node --test tests/*.test.js",
+    "evaluate": "node scripts/evaluate.js"
+  },
+  "license": "MIT"
+}

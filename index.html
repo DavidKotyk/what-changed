@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#153e38"><title>What Changed? — Procedure review desk</title><link rel="stylesheet" href="/src/style.css"></head>
+<body>
+<a class="skip" href="#workspace">Skip to review</a>
+<header class="topbar"><a class="brand" href="/" aria-label="What Changed home"><span class="brandmark">w<span>↗</span></span> What Changed<span class="brand-dot">?</span></a><div class="header-right"><span class="local"><i></i> On your device</span><button id="export" class="button quiet" disabled>Export review ↗</button></div></header>
+<main>
+<section class="intro"><div><p class="eyebrow">THE PROCEDURE REVIEW DESK</p><h1>New document.<br>Same old checklist<span>?</span></h1><p class="intro-copy">Find the steps worth a second look.<br>Compare the evidence. Make the call.</p></div><aside class="intro-aside"><span class="mini-number">01 / 03</span><p>Bring two versions.<br>Keep your procedure in view.</p><div class="mini-rule"></div><small>Private by design · No uploads<br>No account · No model download</small></aside></section>
+<section class="input-section" aria-labelledby="inputs-title">
+<div class="section-bar"><div><span class="section-index">01</span><h2 id="inputs-title">Set up your comparison</h2></div><button id="demo" class="text-button">Try the synthetic example ↗</button></div>
+<details id="inputs" open><summary><span>Documents & procedure</span><span class="summary-hint">Edit inputs / collapse</span></summary>
+<div class="inputs-grid">
+<div class="input-card"><div class="field-heading"><label for="before">Before</label><label class="upload">Import .txt / .md<input type="file" id="file-before" accept=".txt,.md,text/plain,text/markdown"></label></div><p class="field-hint" id="before-hint">The reference document your procedure was based on.</p><textarea id="before" aria-describedby="before-hint" placeholder="Paste the previous document…" spellcheck="false"></textarea></div>
+<div class="input-card"><div class="field-heading"><label for="after">After</label><label class="upload">Import .txt / .md<input type="file" id="file-after" accept=".txt,.md,text/plain,text/markdown"></label></div><p class="field-hint" id="after-hint">The updated reference document.</p><textarea id="after" aria-describedby="after-hint" placeholder="Paste the updated document…" spellcheck="false"></textarea></div>
+<div class="input-card procedure-card"><div class="field-heading"><label for="procedure">Your procedure</label><span id="saved-label" class="saved-label">Not saved</span></div><p class="field-hint" id="procedure-hint">One step per line. Use [Section heading] to bind a step to evidence.</p><textarea id="procedure" aria-describedby="procedure-hint" placeholder="[Dispatch window] Submit labels by 3 p.m.&#10;[Returns] Inspect returns within 5 days." spellcheck="false"></textarea><div class="save-actions"><button id="save" class="text-button">Save procedure locally</button><button id="forget" class="text-button muted">Clear saved copy</button></div></div>
+</div><div class="input-footer"><p>Plain text or Markdown · 80,000 characters per document · 100 steps<br><span id="demo-label">Your documents stay in this tab. Only a saved procedure persists.</span></p><button id="compare" class="button primary">Compare versions <span>→</span></button></div>
+</details>
+</section>
+<p id="notice" role="status" aria-live="polite"></p>
+<section id="workspace" aria-labelledby="review-title" tabindex="-1">
+<div class="section-bar"><div><span class="section-index">02</span><h2 id="review-title">Follow the evidence</h2></div><span id="review-meta" class="muted">Your review starts here</span></div>
+<div id="empty" class="empty"><div class="empty-glyph">≋ <span>↔</span> ≋</div><h3>Words change. Work follows.</h3><p>Add two versions and your procedure, or try the synthetic example.<br>Every step gets a place in the review—even when evidence is missing.</p><button id="empty-demo" class="button quiet">Load example</button></div>
+<div id="review" hidden>
+<div class="review-top"><div id="counts" class="counts"></div><p>Flags guide your review.<br>You decide what needs to change.</p></div>
+<div class="review-grid"><aside class="queue" aria-label="Procedure steps"><label class="filter-label" for="filter">Show steps</label><select id="filter"><option value="all">All steps</option><option value="changed">Review change</option><option value="uncertain">Uncertain</option><option value="unchanged">Text unchanged</option></select><div id="step-list"></div></aside><article id="detail" aria-label="Selected step evidence"></article></div>
+<details id="diff-panel" class="diff-panel"><summary><span>Compare with a simple text diff</span><span>View raw changes ↗</span></summary><p class="diff-description">A line diff shows all edits, including changes unrelated to your checklist. It does not connect changes to steps or assess meaning.</p><div id="diff" class="diff-content"></div></details>
+</div></section>
+<section class="method"><span class="section-index">03</span><div><h2>A second pair of eyes. The decision is yours.</h2><p>Section anchors and shared words locate passages. The app compares their text; it does not understand policy or rewrite your procedure. “Text unchanged” refers to the passage, not the correctness of your instruction.</p><details><summary>What this can miss</summary><p>Synonyms, renamed sections, cross-references, embedded exceptions and long sections can produce weak or misleading matches. Example-language warnings are heuristic. Read both passages and the full source before acting. English plain text and Markdown only.</p></details></div><span class="method-stamp">EVIDENCE<br>BEFORE<br>ASSUMPTIONS</span></section>
+</main><footer><span>What Changed? <span class="muted">Built to keep the human in the review.</span></span><span>LOCAL FIRST / EVIDENCE ALWAYS</span></footer><script type="module" src="/src/app.js"></script>
+</body></html>
