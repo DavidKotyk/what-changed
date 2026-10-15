@@ -11,11 +11,11 @@ Local preparation is complete. New local git repository: what-changed. Original 
 - Demo: demo/what-changed-demo.webm, 118.08 seconds; captioned actual browser interaction; synthetic source content. Preview: demo/preview.html.
 - Draft and publication handoff: docs/submission-draft.md and docs/publication-checklist.md.
 
-## Approval-gated follow-up
-User hands-on review and any feedback are welcome before publication. Explicit approval is required before publishing code/video, accepting terms or submitting. These actions have not been authorized or performed. Public repository and public YouTube/Vimeo links do not exist. No terms accepted; not joined/submitted. Exact Devpost form prompts and survey remain unverified; personal reflection/attestation answers belong to the user. Final workflow review boxes stay unchecked until actually done.
+## Authorized publication and entry
+The user approved publication and submission. Source is public at https://github.com/DavidKotyk/what-changed ; unauthenticated clone and 12 tests verified. Video is public at https://youtu.be/vTV7kH7ZSBE ; signed-out playback verified. GitHub CLI authorization succeeded after explicit permission for displayed scopes. See docs/publication-status.json for machine-readable state.
 
-## Next safe actions
-Check current git status and verification files before relying on this note. If the user supplies feedback, fix and reverify affected behavior, updating the video if behavior shown changes. If publication is authorized, audit intended files/history, publish only authorized materials, verify public links unauthenticated, inspect exact form and obtain any remaining approval before final submission. Deadline verified from official rules: Oct 26, 2026 at 5 p.m. EDT. Recheck at shipping.
+## Remaining work
+Devpost registration is open but not complete. Required personal confidence (1–5), background and eligibility/conflict confirmation remain unanswered. Ask for those facts without re-requesting already granted publication approval. Then inspect the actual submission form, use verified links and factual draft copy, obtain any personal reflections and save the final receipt. Do not claim entry submitted without confirmation. Deadline October 26, 2026 at 5 p.m. EDT, rules reverified October 15.
 
 ## Commands
 `npm start` → http://127.0.0.1:4173 . Node 20+. No npm install required for app/tests/evaluation. QA tooling is external; set PLAYWRIGHT_MODULE to an existing package or install Playwright separately. All computation stays local; no paid API, cloud charges or models authorized.

@@ -1,29 +1,17 @@
-# Publication and entry handoff
+# Publication and entry status
 
-## Prepared locally
-- Original app and synthetic demo documents; no prior project code reused.
-- Scope, PRD, spec, installed Skill Pack, build checklist and provenance.
-- MIT license, README, reproducible engine/browser checks and honest evaluation.
-- Captioned working-app recording and draft submission materials.
+The user explicitly approved publication and contest submission, then approved the displayed GitHub CLI permissions. No further publication approval is pending.
 
-## Approval required — no action taken
-Before any publication, show the user the final app, video, draft, repository contents and requested actions. Obtain explicit approval for:
-1. Creating a public source repository and pushing this project's code/history.
-2. Uploading the demo as a public YouTube or Vimeo video.
-3. Joining the hackathon / accepting terms and entering a submission, if the user wants the agent to do those actions.
+## Verified publication
+- Public source: https://github.com/DavidKotyk/what-changed . Full prepared Git history pushed; public visibility and unauthenticated clone verified. All 12 engine tests passed from the public clone. LICENSE and devpost/scope.md, prd.md and spec.md are present.
+- Public demo: https://youtu.be/vTV7kH7ZSBE . YouTube Studio confirmed publication and Public visibility. Signed-out Incognito playback verified, 1:58 duration.
+- Private learner profile and artifacts remain excluded from Git.
 
-These are separate actions; do not interpret app review as all three approvals. Do not accept terms silently. No approval has yet been received.
+## Remaining entry work
+- User supplies mandatory confidence (1–5), background and eligibility/conflict confirmation. Do not infer personal survey answers.
+- Finish registration, inspect actual submission fields, insert verified public URLs and factual prepared copy. Personal reflections or further attestations require user answers.
+- Record final submission receipt. Current state: not registered or submitted.
+- Preserve public access through judging. Rules last verified October 15, 2026: deadline October 26 at 5 p.m. EDT; judging ends October 30 at 5 p.m. Eastern. Official rules: https://learn-ai-basics.devpost.com/rules .
 
-## Remaining checks after approval
-- Reverify current rules/deadline: https://learn-ai-basics.devpost.com/rules . Deadline currently Oct 26, 2026 at 5 p.m. EDT.
-- User confirms no excluded affiliations/conflicts and reviews rights/publicity terms.
-- Use an authenticated GitHub/GitLab/Bitbucket account only through authorized tooling. Keep the learner profile and artifacts directory excluded. Audit all tracked files and git history again before pushing.
-- Verify public repo unauthenticated; license appears; fresh checkout runs/tests.
-- Upload demo, verify public visibility and playback without authentication. Under three minutes; no copyrighted music, unrelated desktop content or third-party marks in footage.
-- Inspect actual submission fields. User supplies personal attestations, registration/exit survey and personal learning answer. Draft content is agent-prepared and needs user review.
-- Insert verified public URLs, show final form state, then submit only with explicit authorization.
-- Preserve free repository/demo access through judging (currently Oct 30, 2026 at 5 p.m. Eastern).
-
-## Local review commands
-`npm start` → http://127.0.0.1:4173 ; `npm test` ; `npm run evaluate` .
-Video: `demo/what-changed-demo.webm` . Source/diagnostics are in README.md and docs/.
+## Local commands
+`npm start` → http://127.0.0.1:4173 ; `npm test` ; `npm run evaluate` . Node 20+; no installation needed for application dependencies.

@@ -74,4 +74,4 @@ English plain text/Markdown only; 80,000 characters per reference document, 30,0
 
 Started from an empty project directory on October 15, 2026. No previous project code reused. The installed Devpost Learn Skill Pack lives in `.agents/skills/` under its original MIT license. Original application code and synthetic demo material use the root MIT license. No other third-party app source, graphics, fonts or music are bundled. Playwright/Chrome/FFmpeg used for local QA/recording are external development tools and are not redistributed.
 
-The user authorized publication and submission. The demo is public on YouTube; the source repository and Devpost entry remain pending GitHub verification and required personal registration answers. See docs/publication-status.json for the latest verified state.
+The user authorized publication and submission. The [source repository](https://github.com/DavidKotyk/what-changed) and [demo video](https://youtu.be/vTV7kH7ZSBE) are public and verified. The Devpost entry awaits required personal registration answers. See docs/publication-status.json for the latest verified state.

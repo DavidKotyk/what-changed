@@ -7,17 +7,19 @@
   "unauthenticatedPlaybackVerified": true,
   "verification": "Incognito window displayed Sign in, correct video title, real app footage and playback at 0:02 of 1:58.",
   "verifiedAt": "2026-10-15T23:49:43.434130+00:00",
-  "repositoryPublished": false,
+  "repositoryPublished": true,
   "contestRegistered": false,
   "contestSubmitted": false,
   "authorization": "User explicitly approved submission and delegated remaining steps.",
   "remainingBlockers": [
-    "Source upload pending: CLI requests broader repository/account permissions; explicit authorization choice requested. Website upload remains an alternative.",
     "Mandatory Devpost confidence/background survey and eligibility-conflict confirmation remain unanswered."
   ],
   "repositoryUrl": "https://github.com/DavidKotyk/what-changed",
   "repositoryCreated": true,
-  "repositorySourceUploaded": false,
+  "repositorySourceUploaded": true,
   "gitHubBrowserSignInVerified": true,
-  "updatedAt": "2026-10-15T23:56:42.440871+00:00"
+  "updatedAt": "2026-10-15T23:59:30.959495+00:00",
+  "repositoryUnauthenticatedCloneVerified": true,
+  "repositoryTestsPassed": 12,
+  "repositoryVerifiedCommit": "698d7c2d7a79febb93ecd3043e998f693a3a7c3a"
 }
