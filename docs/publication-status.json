@@ -12,7 +12,12 @@
   "contestSubmitted": false,
   "authorization": "User explicitly approved submission and delegated remaining steps.",
   "remainingBlockers": [
-    "GitHub device-verification code is withheld by the connected email tool; user verification required.",
-    "Devpost mandatory personal confidence/background and eligibility-conflict confirmation remain unknown."
-  ]
+    "Source upload pending: CLI requests broader repository/account permissions; explicit authorization choice requested. Website upload remains an alternative.",
+    "Mandatory Devpost confidence/background survey and eligibility-conflict confirmation remain unanswered."
+  ],
+  "repositoryUrl": "https://github.com/DavidKotyk/what-changed",
+  "repositoryCreated": true,
+  "repositorySourceUploaded": false,
+  "gitHubBrowserSignInVerified": true,
+  "updatedAt": "2026-10-15T23:56:42.440871+00:00"
 }
