@@ -116,3 +116,15 @@ export function lineDiff(before, after) {
   }
   return { lines };
 }
+
+// A single changed text span, purely visual. Returned ranges always partition
+// the original text exactly; broad spans may include unchanged words between edits.
+export function changedSpan(text, other) {
+  if (text === other) return { prefix: text, changed: '', suffix: '' };
+  let start = 0, end = text.length, otherEnd = other.length;
+  while (start < Math.min(text.length, other.length) && text[start] === other[start]) start++;
+  while (start > 0 && /[\p{L}\p{N}]/u.test(text[start - 1]) && /[\p{L}\p{N}]/u.test(text[start] || '')) start--;
+  while (end > start && otherEnd > start && text[end - 1] === other[otherEnd - 1]) { end--; otherEnd--; }
+  while (end < text.length && /[\p{L}\p{N}]/u.test(text[end - 1] || '') && /[\p{L}\p{N}]/u.test(text[end])) end++;
+  return { prefix: text.slice(0, start), changed: text.slice(start, end), suffix: text.slice(end) };
+}

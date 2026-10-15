@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { compare, parseDocument, lineDiff, LIMITS } from '../src/engine.js';
+import { compare, parseDocument, lineDiff, changedSpan, LIMITS } from '../src/engine.js';
 import { demo } from '../src/demo.js';
 test('synthetic journey: change, unchanged, missing evidence, misleading wording', () => {
   const r = compare(demo.before, demo.after, demo.procedure);
@@ -61,4 +61,11 @@ test('simple line diff reconstructs both versions including blank lines', () => 
     assert.equal(d.filter(x => x.kind !== 'remove').map(x => x.text).join('\n'), b);
   }
   assert.ok(lineDiff('\n'.repeat(LIMITS.lines), 'a').unavailable);
+});
+
+test('visual change spans preserve exact original text', () => {
+  for (const [a,b] of [['Submit by 3 p.m.', 'Submit by 1 p.m.'], ['AB','ABCD'], ['Same','Same'], ['','abc'], ['no café','café'], ['Keep old line.','Keep new line.']]) {
+    const s = changedSpan(a,b); assert.equal(s.prefix + s.changed + s.suffix, a);
+    if (a === b) assert.equal(s.changed, '');
+  }
 });

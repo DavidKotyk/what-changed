@@ -15,7 +15,7 @@ Build mode: fast, adapted to explicit autonomous work instruction (docs/workflow
   Verify (mechanical): `npm test`; start server and browser-check synthetic comparison.
   Learner check: Load demo; inspect deadline change, unchanged return instruction, missing archive and misleading example.
   Commit: `Build step-linked document evidence review`
-- [ ] **2. Save procedures, record decisions and export a review**
+- [x] **2. Save procedures, record decisions and export a review**
   Becomes usable: Complete repeatable review journey with saved checklist and evidence export.
   Why now: Adds useful review workflow on verified evidence.
   PRD ref: `prd.md > Saved procedure and decisions`, `prd.md > Raw diff and export`
@@ -44,3 +44,5 @@ Build mode: fast, adapted to explicit autonomous work instruction (docs/workflow
 Optional edit/reflection not requested, per autonomy preference. No learner survey response fabricated.
 ## Revisions
 - Initial implementation also included saving, decisions and export so the browser could exercise the complete journey immediately. Slice 2 retains the independent workflow verification and polish checkpoint.
+
+Browser verification: Chrome 155, ten assertions covering input errors, exact evidence, categories, filter, export, persistence, invalidation, literal HTML, mobile overflow, exceptions and external requests. Results in docs/browser-check.json (copied from local artifact). No learner feedback inferred.

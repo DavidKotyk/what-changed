@@ -1,4 +1,4 @@
-import { compare, lineDiff, LIMITATIONS } from './engine.js';
+import { compare, lineDiff, changedSpan, LIMITATIONS } from './engine.js';
 import { demo } from './demo.js';
 const $ = id => document.getElementById(id);
 const fields = ['before', 'after', 'procedure'];
@@ -31,7 +31,7 @@ $('compare').addEventListener('click', () => {
     report = compare(input.before, input.after, input.procedure); snapshot = input;
     decisions = {}; selected = report.results[0].step.id; $('filter').value = 'all';
     $('empty').hidden = true; $('review').hidden = false; $('export').disabled = false;
-    $('inputs').open = false; $('review-meta').textContent = `${report.results.length} steps · Human review required`;
+    $('inputs').open = false; $('review-meta').textContent = `${fields.every(id => input[id] === demo[id]) ? 'Synthetic example · ' : ''}${report.results.length} steps · Human review required`;
     render(); renderDiff(); notice('Comparison ready. Inspect both passages before recording a decision.');
     $('workspace').focus();
   } catch (error) { invalidate(); notice(error.message, true); $('inputs').open = true; }
@@ -58,7 +58,13 @@ function evidenceCard(result, side) {
   const e = result[side], card = el('section', 'evidence');
   card.setAttribute('aria-label', `${side === 'before' ? 'Before' : 'After'} evidence`);
   const header = el('div', 'evidence-header'); header.append(el('strong', '', side === 'before' ? 'BEFORE' : 'AFTER'), el('span', '', e ? `L${e.lineStart}${e.lineEnd !== e.lineStart ? '–' + e.lineEnd : ''}` : 'MISSING'));
-  card.append(header, el('blockquote', e ? '' : 'missing', e?.text || 'No supporting passage located. This absence is not evidence that the instruction was removed or reversed.'), el('p', 'match-reason', result.match[side])); return card;
+  const quote = el('blockquote', e ? '' : 'missing');
+  const other = result[side === 'before' ? 'after' : 'before'];
+  if (e && other && e.text !== other.text) {
+    const span = changedSpan(e.text, other.text);
+    quote.append(document.createTextNode(span.prefix), el('mark', '', span.changed), document.createTextNode(span.suffix));
+  } else quote.textContent = e?.text || 'No supporting passage located. This absence is not evidence that the instruction was removed or reversed.';
+  card.append(header, quote, el('p', 'match-reason', result.match[side])); return card;
 }
 function renderDetail() {
   const result = report.results.find(r => r.step.id === selected);

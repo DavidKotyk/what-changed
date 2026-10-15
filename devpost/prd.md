@@ -19,7 +19,7 @@ Agent-selected under autonomy: warm neutral paper, dark ink, teal buttons, restr
 ### Document inputs
 Editable old/new Markdown or plain text, bounded at 80,000 characters each and 100 checklist lines. Optional UTF-8 .txt/.md import. Demo overwrites only after a warning if input differs from the demo. Empty inputs produce actionable errors.
 ### Step-linked evidence
-Implements scope.md > The Unique Kernel. Exact text and line numbers from each version. Anchored sections matched by heading; unanchored steps use conservative lexical retrieval. Each result explains its basis. A missing side has no fabricated quote. Duplicate anchors, weak matches and potentially misleading examples require verification.
+Implements scope.md > The Unique Kernel. Exact text and line numbers from each version, with a visual highlight over the changed span (which may include unchanged text between multiple edits). Anchored sections matched by heading; unanchored steps use conservative lexical retrieval. Each result explains its basis. A missing side has no fabricated quote. Duplicate anchors, weak matches and potentially misleading examples require verification.
 ### Review categories
 “Review change”: a confidently located passage differs; no claim that the instruction must change. “Text unchanged”: confidently located passages match after whitespace normalization; no semantic certification. “Uncertain”: missing/ambiguous/weak or potentially misleading evidence. Every step remains available, including unchanged steps.
 ### Saved procedure and decisions

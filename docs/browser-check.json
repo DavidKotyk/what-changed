@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-15T23:25:48.813Z",
+  "browser": "155.0.8059.40",
+  "checks": [
+    "Empty inputs rejected",
+    "Demo categories and exact deadline evidence rendered",
+    "Export includes all evidence, inputs, limitations and human decisions",
+    "Uncertainty filter exposes missing evidence and misleading example",
+    "Raw line diff shows additions and removals",
+    "Only explicitly saved procedure survives reload",
+    "Editing inputs clears results and disables stale export",
+    "Source HTML remains literal text",
+    "390px viewport has no page overflow",
+    "No browser exceptions or external requests"
+  ],
+  "errors": [],
+  "externalRequests": []
+}
