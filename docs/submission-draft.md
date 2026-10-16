@@ -1,6 +1,6 @@
 # Contest submission draft — for user review
 
-Agent-prepared at the user's explicit request. The contest entry is not submitted; this draft is not represented as learner-written reflection. The actual submission form has not been accessed; map these sections to its fields after approval. The Skill Pack normally asks for human-authored copy; this adaptation is disclosed in workflow.md. Personal learning and survey answers remain for the user.
+Agent-prepared at the user's explicit request. The contest entry was submitted successfully; see docs/submission-receipt.json. This preparation draft is retained for provenance; the actual form used factual project copy and user-provided survey answers. The Skill Pack normally asks for human-authored copy; this adaptation is disclosed in workflow.md. Personal learning and survey answers remain for the user.
 
 ## Project name
 What Changed?
@@ -38,4 +38,4 @@ JavaScript, HTML, CSS, Node.js, Devpost Learn Skill Pack, AI-assisted developmen
 - Public repository URL: https://github.com/DavidKotyk/what-changed (public; unauthenticated clone and 12 tests verified)
 - Public YouTube demo URL: https://youtu.be/vTV7kH7ZSBE (published, public, signed-out playback verified)
 - Optional live hosted app: not planned; local run plus public video/repo meets the documented artifact requirements
-- Exact form fields / exit survey: unverified; user answers required where personal attestation or reflection is requested
+- Actual form and exit survey completed; final project: https://devpost.com/software/what-changed

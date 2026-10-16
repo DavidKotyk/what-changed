@@ -7,11 +7,13 @@ The user explicitly approved publication and contest submission, then approved t
 - Public demo: https://youtu.be/vTV7kH7ZSBE . YouTube Studio confirmed publication and Public visibility. Signed-out Incognito playback verified, 1:58 duration.
 - Private learner profile and artifacts remain excluded from Git.
 
-## Remaining entry work
-- User supplies mandatory confidence (1–5), background and eligibility/conflict confirmation. Do not infer personal survey answers.
-- Finish registration, inspect actual submission fields, insert verified public URLs and factual prepared copy. Personal reflections or further attestations require user answers.
-- Record final submission receipt. Current state: not registered or submitted.
-- Preserve public access through judging. Rules last verified October 15, 2026: deadline October 26 at 5 p.m. EDT; judging ends October 30 at 5 p.m. Eastern. Official rules: https://learn-ai-basics.devpost.com/rules .
+## Entry completed
+- Registered and completed the required survey with user-supplied answers.
+- Project story, public repository/video links, thumbnail, license link and technology explanation saved and previewed.
+- User explicitly confirmed final agreement and submission. Devpost displayed “Project submitted!” and “SUBMITTED TO Build With AI: Basics”.
+- Project: https://devpost.com/software/what-changed . Receipt: docs/submission-receipt.json.
+- Submission is confirmed; prize eligibility and judging outcome remain the organizer's determination.
+- Preserve public access through judging. Official rules: https://learn-ai-basics.devpost.com/rules . Deadline October 26 at 5 p.m. EDT; judging ends October 30 at 5 p.m. Eastern.
 
 ## Local commands
 `npm start` → http://127.0.0.1:4173 ; `npm test` ; `npm run evaluate` . Node 20+; no installation needed for application dependencies.

@@ -8,18 +8,19 @@
   "verification": "Incognito window displayed Sign in, correct video title, real app footage and playback at 0:02 of 1:58.",
   "verifiedAt": "2026-10-15T23:49:43.434130+00:00",
   "repositoryPublished": true,
-  "contestRegistered": false,
-  "contestSubmitted": false,
+  "contestRegistered": true,
+  "contestSubmitted": true,
   "authorization": "User explicitly approved submission and delegated remaining steps.",
-  "remainingBlockers": [
-    "Mandatory Devpost confidence/background survey and eligibility-conflict confirmation remain unanswered."
-  ],
+  "remainingBlockers": [],
   "repositoryUrl": "https://github.com/DavidKotyk/what-changed",
   "repositoryCreated": true,
   "repositorySourceUploaded": true,
   "gitHubBrowserSignInVerified": true,
-  "updatedAt": "2026-10-15T23:59:30.959495+00:00",
+  "updatedAt": "2026-10-16T03:50:47.044241+00:00",
   "repositoryUnauthenticatedCloneVerified": true,
   "repositoryTestsPassed": 12,
-  "repositoryVerifiedCommit": "698d7c2d7a79febb93ecd3043e998f693a3a7c3a"
+  "repositoryVerifiedCommit": "698d7c2d7a79febb93ecd3043e998f693a3a7c3a",
+  "submissionUrl": "https://devpost.com/software/what-changed",
+  "submissionId": 1239847,
+  "submissionConfirmation": "Project submitted! Continue to edit your project until the hackathon deadline: October 26, 2026 at 05:00pm EDT."
 }

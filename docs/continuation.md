@@ -14,8 +14,8 @@ Local preparation is complete. New local git repository: what-changed. Original 
 ## Authorized publication and entry
 The user approved publication and submission. Source is public at https://github.com/DavidKotyk/what-changed ; unauthenticated clone and 12 tests verified. Video is public at https://youtu.be/vTV7kH7ZSBE ; signed-out playback verified. GitHub CLI authorization succeeded after explicit permission for displayed scopes. See docs/publication-status.json for machine-readable state.
 
-## Remaining work
-Devpost registration is open but not complete. Required personal confidence (1–5), background and eligibility/conflict confirmation remain unanswered. Ask for those facts without re-requesting already granted publication approval. Then inspect the actual submission form, use verified links and factual draft copy, obtain any personal reflections and save the final receipt. Do not claim entry submitted without confirmation. Deadline October 26, 2026 at 5 p.m. EDT, rules reverified October 15.
+## Entry completed
+Devpost registration, user-provided exit survey and final submission are complete. User explicitly authorized final agreement/submission at the action step. Confirmation banner: “Project submitted!”; project shows “SUBMITTED TO Build With AI: Basics”. Project URL: https://devpost.com/software/what-changed . Receipt: docs/submission-receipt.json. Do not submit a duplicate entry. Preserve public evaluation access through judging; changes remain possible until the deadline. No prize or organizer eligibility decision is claimed.
 
 ## Commands
 `npm start` → http://127.0.0.1:4173 . Node 20+. No npm install required for app/tests/evaluation. QA tooling is external; set PLAYWRIGHT_MODULE to an existing package or install Playwright separately. All computation stays local; no paid API, cloud charges or models authorized.
